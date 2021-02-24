@@ -132,3 +132,49 @@
 .hide {
   display: none;
 }
+
+@media only screen and (min-width: 1440px) {
+  .pattern-bg {
+    top: 5%;
+    left: 47%;
+  }
+  .pattern-bg img {
+    height: 100%;
+    width: 100%;
+  }
+  .pattern-curve {
+    left: 0;
+  }
+  .pattern-quotes {
+    top: 30%;
+    left: 20%;
+  }
+
+  .pattern-quotes img {
+    height: 80%;
+    width: 80%;
+  }
+  .carousel-image {
+    top: 13%;
+    left: 55%;
+  }
+  .carousel-image > img {
+    height: 500px;
+    width: 500px;
+  }
+  .carousel-text {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    text-align: left;
+    width: 50%;
+    font-size: 36px;
+    font-weight: 300;
+  }
+  .about {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+  }
+}
