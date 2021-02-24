@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: hsl(240, 38%, 20%);
+  font-weight: 300;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pattern-bg,
+.pattern-curve,
+.pattern-quotes {
+  position: absolute;
+  z-index: 0;
+}
+
+.pattern-bg {
+  top: 5%;
+  left: 7%;
+}
+
+.pattern-bg img {
+  height: 20rem;
+  width: 20rem;
+}
+
+.pattern-quotes {
+  top: 58%;
+  left: 40%;
+}
+
+.pattern-quotes img {
+  height: 60%;
+  width: 60%;
+}
+
+.pattern-curve {
+  bottom: 0;
+}
+.pattern-curve img {
+  height: 90%;
+  width: 90%;
+}
+
+.carousel-image {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-image img {
+  height: 260px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.btn-container {
+  position: relative;
+  height: 50px;
+  width: 90px;
+  display: flex;
+  margin-top: -25px;
+}
+
+.btn-container div {
+  height: 50px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-container div:hover {
+  background: lightgray;
+}
+
+.btn-prev,
+.btn-next {
+  background: white;
+}
+
+.btn-prev img,
+.btn-next img {
+  height: 30%;
+  width: 25%;
+}
+
+.btn-prev {
+  border-radius: 50% 0 0 50%;
+}
+
+.btn-next {
+  border-radius: 0 50% 50% 0;
+}
+
+.carousel-text {
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  width: 80%;
+  text-align: center;
+}
+
+.about {
+  margin-top: 10px;
+}
+
+.about h4 {
+  font-weight: 700;
+}
+
+.about p {
+  color: hsl(240, 18%, 77%);
+}
+
+.hide {
+  display: none;
+}
