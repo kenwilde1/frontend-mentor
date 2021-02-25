@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background: hsl(273, 75%, 66%);
+  background: linear-gradient(
+    360deg,
+    hsl(240, 73%, 65%) 50%,
+    hsl(273, 75%, 66%) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-container {
+  background: white;
+  width: 85vw;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: hsl(238, 29%, 16%);
+  font-size: 13px;
+  margin-top: 100px;
+  padding-bottom: 40px;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.img-box-container {
+  position: absolute;
+  top: 13%;
+  left: 16%;
+}
+
+.img-box-container img {
+  height: 100px;
+  width: 112px;
+}
+
+.faq-container h1 {
+  margin-top: 140px;
+  margin-bottom: 30px;
+}
+
+.img-container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 370px;
+  background: url("./images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img-container img {
+  margin-bottom: 140px;
+  height: 170px;
+  width: 230px;
+}
+
+.faq {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.faq-question {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+
+.hide {
+  display: none;
+}
+
+.faqOne,
+.faqTwo,
+.faqThree,
+.faqFour,
+.faqFive {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-rotate {
+  transition: all 0.2s;
+}
+
+.bold {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .faq-container {
+    width: 65vw;
+    height: 65vh;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 100px;
+    padding-top: 50px;
+  }
+  .faq {
+    width: 40%;
+    font-size: 1.1rem;
+    height: 330px;
+  }
+  h1 {
+    position: absolute;
+    top: 15%;
+    right: 43%;
+    font-size: 2rem;
+  }
+
+  .img-container {
+    position: absolute;
+    border: 1px solid black;
+    top: 20%;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+
+  .img-container img {
+    margin-bottom: 140px;
+    height: 330px;
+    width: 400px;
+  }
+  .img-box-container {
+    top: 13%;
+    left: 16%;
+  }
+  .img-box-container img {
+    height: 200px;
+    width: 220px;
+  }
+}
