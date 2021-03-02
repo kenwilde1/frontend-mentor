@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400,500,600;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condense", sans-serif;
+  line-height: 22px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(210, 46%, 95%);
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "one one two three"
+    "four five five three";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: 13%;
+  margin-right: 13%;
+  gap: 1rem;
+}
+
+.container > div {
+  border-radius: 10px;
+}
+
+.testimonyOne {
+  grid-area: one;
+  height: 35vh;
+  background-color: hsl(263, 55%, 52%);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.testimonyTwo {
+  grid-area: two;
+  height: 35vh;
+  background-color: hsl(217, 19%, 35%);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.testimonyThree {
+  grid-area: three;
+  min-height: 70vh;
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.testimonyFour {
+  grid-area: four;
+  height: 35vh;
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.testimonyFive {
+  grid-area: five;
+  height: 35vh;
+  background: hsl(219, 29%, 14%);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.persona {
+  display: flex;
+  gap: 1rem;
+  color: hsl(0, 0%, 81%);
+  font-weight: 400;
+}
+
+.name-container p {
+  color: hsla(0, 0%, 81%, 0.5);
+}
+
+.image-container {
+  background: hsla(210, 46%, 95%, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+}
+
+.image-container img {
+  border-radius: 50%;
+  height: 40px;
+}
+
+.about {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.quote {
+  color: hsla(0, 0%, 81%, 0.7);
+  font-size: 1rem;
+}
+
+.boldOne {
+  color: hsl(217, 19%, 35%);
+}
+
+.boldTwo {
+  color: hsla(217, 19%, 35%, 0.7);
+}
+
+@media only screen and (max-width: 1440px) {
+  .about {
+    font-size: 1.2rem;
+  }
+
+  .quote {
+    font-size: 0.8rem;
+  }
+}
